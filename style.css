@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-size: 14px;
+}
+
+#sec1 {
+    height:1100px;
+}
+
+#sec2 {
+    background-color: white;
+    height: 100px;
+}
+
+#sec3 {
+    background-color:#C4C4C4;
+    height: 400px;
+}
+
+#sec4 {   
+    background-color: white; 
+    height: 100px;
+}
+
+#sec5 {
+    background-color:#364E51;
+    height: 800px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#des1 {
+    background-color:#364E51;
+    height: 50px;
+}
+
+#des2 {
+    background-color:#C4C4C4;
+    height: 500px;
+}
+
+#des3 {
+    background-color:#364E51;
+    height: 650px;
+}
+
+#des4 {
+    background-color: white;
+    height: 100px;
+}
+
+#des5 {
+    background-color:#C4C4C4;
+    height: 50px;
+}
+
+#des6 {
+    background-color:#C4C4C4;
+    height: 400px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float:left;
+    padding: 1px;
+}
+
+.col-1 {width: 12.5%;}
+.col-2 {width: 25%;}
+.col-3 {width: 37.5%;}
+.col-4 {width: 50%;}
+.col-5 {width: 62.5%;}
+.col-6 {width: 75%;}
+.col-7 {width: 87.5%;}
+.col-8 {width: 100%;}
+
+
+#navbar {
+    margin-top: 50px;
+    position: fixed;
+    background-color: #1B1919;
+  }
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-family: Reem Kufi;
+    font-weight:normal;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.cta {
+    margin-top: 70vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    padding: 25px;
+}
