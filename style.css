@@ -35,7 +35,7 @@ body {
 
 #sec3 {
     background-color:#C4C4C4;
-    height: 400px;
+    height: 450px;
 }
 
 #sec4 {   
@@ -151,4 +151,9 @@ span {
 
 samp {
     font-family: reem kufi;
+}
+
+img {
+    float: right;
+    padding-right: 10%;
 }
