@@ -194,22 +194,64 @@ img {
     position: absolute;
     margin-top: 20px;
     margin-left: 9%;
-    height: 450px;
+    height: 400px;
     width: 30%;
     background-color:#364E51;
     font-family: reem kufi;
-    font-size: 2em;
+    font-size: 1.8em;
+    padding: .4em .4em;
     color: white;
 }
 
 #about2 {
     position: absolute;
-    margin-top: 250px;
+    margin-top: 220px;
     margin-left: 44%;
     height: 200px;
     width: 50%;
     background-color:#364E51;
     font-family: reem kufi;
-    font-size: 2em;
+    font-size: 1.8em;
+    padding: .4em .4em;
     color: white;
+}
+
+#whatwedo {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#ourteam {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#projects {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#contact {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
 }
