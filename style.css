@@ -26,19 +26,18 @@ body {
 }
 
 #sec1 {
-    margin-top: -30px;
+    margin-top: -10px;
     height:1300px;
-    position: relative;
 }
 
 #sec2 {
     background-color: white;
-    height: 150px;
+    height: 250px;
 }
 
 #sec3 {
     background-color:#C4C4C4;
-    height: 450px;
+    height: 800px;
 }
 
 #sec4 {   
@@ -48,7 +47,7 @@ body {
 
 #sec5 {
     background-color:#364E51;
-    height: 800px;
+    height: 1500px;
 }
 
 .container {
@@ -96,12 +95,6 @@ body {
     float:left;
     padding: 1px;
 }
-
-
-.col-2 {width: 14.42%;}
-.col-8 {width: 71.14%;}
-
-
 
 #navbar {
     overflow: hidden;
@@ -186,12 +179,13 @@ img {
     position: absolute;
     margin-top: 20px;
     margin-left: 9%;
-    height: 400px;
+    /*height: 400px;*/
     width: 30%;
     background-color:#364E51;
     font-family: reem kufi;
     font-size: 1.8em;
-    padding: .4em .4em;
+    text-align: justify;
+    padding: 1em 1em;
     color: white;
 }
 
@@ -199,12 +193,13 @@ img {
     position: absolute;
     margin-top: 220px;
     margin-left: 44%;
-    height: 200px;
+    /*height: 200px;*/
     width: 50%;
     background-color:#364E51;
     font-family: reem kufi;
     font-size: 1.8em;
-    padding: .4em .4em;
+    text-align: justify;
+    padding: 1em 1em;
     color: white;
 }
 
@@ -239,7 +234,6 @@ img {
 }
 
 #contact {
-    margin-left: 8%;
     font-family: Ramaraja;
     font-style: normal;
     font-weight: normal;
@@ -249,5 +243,117 @@ img {
 }
 
 #projectslider {
-    height: 250px;
+    height: 400px;
 }
+
+.wedo {
+    display: none;
+  }
+
+.card1 {
+    display: block;
+    margin-left: 4%;
+}
+
+.card2 {
+    display: block;
+    margin-left: 28%;
+}
+
+.card3 {
+    display: block;
+    margin-left: 52%;
+}
+
+.card4 {
+    display: block;
+    margin-left: 76%;
+}
+
+
+#servicescontainer {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: Black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+.text {
+    color:#000000;
+    font-size: 32px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 20%;
+    text-align: center;
+}
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .contactContainer {
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

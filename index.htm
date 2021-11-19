@@ -23,20 +23,10 @@
     </head>
 
     <body>
-
-        <div class="col-2"></div>
-        <div class="col-8">
+        <div>
             <div class="cta">
-                <a href="">CTA</a>
+                <a href="#contact">CTA</a>
             </div>
-        </div>
-        <div class="col-2"></div>
-
-        <br>
-
-        <div class="col-2"></div>
-        <div class="col-8">
-
             <header id="sec1">
                 <div id="des1"></div>
                 <nav id="navbar">
@@ -53,7 +43,9 @@
                             <div id="slogan">Beat the odds</div>
                             <div id="mission">We help you start, lead, <br> play or be a part of organisations</div>
                         </div>
-                        <div id="des4"><span id="aboutus">About us</span></div>
+                        <div id="des4">
+                            <div id="aboutus">About us</div>
+                        </div>
                         <div id="des5">
                         </div>
                     </div>
@@ -64,7 +56,7 @@
                     </div>
                 </div>
                 <div id="des6">
-                    <img src="./image1.png" width="50%"
+                    <img src="./image1.png" width="auto"
                         style="margin-right: 4em; margin-top: -17em; position: relative; float: right;" />
                     <div id="about1">To each their language. To each their reason. We have a dream
                         that one day all of us would exist in cohesion, respecting one another, accepting each other
@@ -80,20 +72,94 @@
             </header>
             <section id="sec2">
                 <div id="whatwedo">What do we do?</div>
+                <div id="servicescontainer">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div class="wedo fade" style="display: block;">
+                        <div class="card1">
+                            <div class="text">Organisational Restructuring</div>
+                        </div>
+                        <div class="card2">
+                            <div class="text">Culture Development and Implementation</div>
+                        </div>
+                        <div class="card3">
+                            <div class="text">The art of collaboration</div>
+                        </div>
+                        <div class="card4">
+                            <div class="text">Work-life balance</div>
+                        </div>
+                    </div>
+                    <div class="wedo fade">
+                        <div class="card1">
+                            <div class="text">Business Strategy Facilitation</div>
+                        </div>
+                        <div class="card2">
+                            <div class="text">Career path guidance and counselling</div>
+                        </div>
+                        <div class="card3">
+                            <div class="text">Growth and Change Implementaion</div>
+                        </div>
+                        <div class="card4">
+                            <div class="text">Organising and Building a Team</div>
+                        </div>
+                    </div>
+                    <div class="wedo fade">
+                        <div class="card1">
+                            <div class="text">Value Based Development and Awareness</div>
+                        </div>
+                        <div class="card2">
+                            <div class="text">Effective and Constructive Communication</div>
+                        </div>
+                        <div class="card3">
+                            <div class="text">Leadership and Management Orientation</div>
+                        </div>
+                        <div class="card4">
+                            <div class="text">Startup Structure</div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </section>
             <section id="sec3">
-                <span id="ourteam">Our team</span>
+                <div id="ourteam">Our team</div>
                 <img src="./image2.png" width="40%" />
             </section>
             <section id="sec4">
-                <span id="projects">Some Projects
-                    we have worked on</span>
+                <div id="projects">Some Projects
+                    we have worked on</div>
             </section>
             <footer id="sec5">
-                <span id="contact">Contact Us</span>
+                <div id="projectslider"></div>
+                <div class="contactContainer">
+                    <div style="text-align:right">
+                        <div id="contact">Contact Us</div>
+                        <h1>Swing by for a cup of coffee, or leave us a message:</h1>
+                    </div>
+                    <form action="">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </footer>
         </div>
-        <div class="col-2"></div>
+
     </body>
 
 </html>

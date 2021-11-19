@@ -1,12 +1,21 @@
-window.onscroll = function() {stickyNavBar()};
+var slideIndex = 1;
+showSlides(slideIndex);
 
-var nav = document.getElementById("navbar");
-var sticky = nav.offsetParent;
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-function stickyNavBar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("wedo");
+  if (n > slides.length) {slideIndex = 1}  
+  if (n < 1) {slideIndex = slides.length} 
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
+  slides[slideIndex-1].style.display = "block";
 }
