@@ -19,3 +19,25 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+var gaslideIndex = 1;
+gashowSlides(gaslideIndex);
+
+function gaplusSlides(n) {
+  gashowSlides(gaslideIndex += n);
+}
+
+function gacurrentSlide(n) {
+  gashowSlides(gaslideIndex = n);
+}
+
+function gashowSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {gaslideIndex = 1}    
+  if (n < 1) {gaslideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[gaslideIndex-1].style.display = "block";  
+}
