@@ -5,13 +5,9 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("wedo");
+  var slides = document.querySelectorAll("div.wedo");
   if (n > slides.length) {slideIndex = 1}  
   if (n < 1) {slideIndex = slides.length} 
   for (i = 0; i < slides.length; i++) {
@@ -20,24 +16,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-var gaslideIndex = 1;
-gashowSlides(gaslideIndex);
+var galleryIndex = 0;
+showGallery();
 
-function gaplusSlides(n) {
-  gashowSlides(gaslideIndex += n);
-}
-
-function gacurrentSlide(n) {
-  gashowSlides(gaslideIndex = n);
-}
-
-function gashowSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {gaslideIndex = 1}    
-  if (n < 1) {gaslideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+function showGallery() {
+  var j;
+  var photos = document.querySelectorAll("div.gallery");
+  for (j = 0; j < photos.length; j++) {
+    photos[j].style.display = "none";  
   }
-  slides[gaslideIndex-1].style.display = "block";  
+  galleryIndex++;
+  if (galleryIndex > photos.length) {galleryIndex = 1}    
+  photos[galleryIndex-1].style.display = "block";  
+  setTimeout(showGallery, 5000); // Change image every 2 seconds
 }

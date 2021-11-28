@@ -47,7 +47,7 @@ body {
 
 #sec5 {
     background-color:#364E51;
-    height: 1500px;
+    height: 1600px;
 }
 
 .container {
@@ -233,7 +233,7 @@ img {
     color: #000000;
 }
 
-#gallery {
+#portfolioText {
     position: absolute;
     margin-top: 25px;
     margin-left: 9%;
@@ -320,13 +320,6 @@ img {
     text-align: center;
 }
 
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -351,18 +344,54 @@ img {
   /* Style the container/contact section */
   .contactContainer {
     border-radius: 5px;
-    padding: 10px;
+    padding-top: 1200px;
     width: 80%;
     margin-left: 10%;
     color: white;
   }
 
   #photogallery {
-    border-radius: 5px;
-    padding: 10px;
-    width: 80%;
-    margin-left: 10%;
-    color: white; 
+    padding-top:50px;
+    width: 90%;
+    margin-left: 8%;
+    position: relative;
+  }
+
+  .gallery {
+      display: none;
+  }
+
+  .prevGallery, .nextGallery {
+      cursor: pointer;
+      position:absolute;
+      top:50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+  }
+
+  .nextGallery {
+      right: 10%;
+      border-radius: 3px 0 0 3px;
+  }
+
+  .prevGallery:hover, .nextGallery:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .numbertext {
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50px;
   }
 
   .team-card {
@@ -406,6 +435,14 @@ img {
     color: black;
     font-size: 18px;
   }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
   @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
