@@ -16,17 +16,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-var galleryIndex = 0;
-showGallery();
+var galleryIndex = 1;
+showGallery(galleryIndex);
 
-function showGallery() {
+function plusGallery(n) {
+  showGallery(galleryIndex += n);
+}
+
+function showGallery(n) {
   var j;
   var photos = document.querySelectorAll("div.gallery");
+  if (n > photos.length) {galleryIndex = 1}
+  if (n < 1) {galleryIndex = photos.length}
   for (j = 0; j < photos.length; j++) {
     photos[j].style.display = "none";  
   }
-  galleryIndex++;
-  if (galleryIndex > photos.length) {galleryIndex = 1}    
   photos[galleryIndex-1].style.display = "block";  
-  setTimeout(showGallery, 5000); // Change image every 2 seconds
 }

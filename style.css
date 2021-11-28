@@ -343,17 +343,15 @@ img {
   
   /* Style the container/contact section */
   .contactContainer {
-    border-radius: 5px;
-    padding-top: 1200px;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 9%;
     color: white;
   }
 
   #photogallery {
     padding-top:50px;
-    width: 90%;
-    margin-left: 8%;
+    width: 60%;
+    margin-left: 20%;
     position: relative;
   }
 
@@ -366,7 +364,7 @@ img {
       position:absolute;
       top:50%;
       width: auto;
-      margin-top: -22px;
+      margin-top: 25%;
       padding: 16px;
       color: white;
       font-weight: bold;
@@ -393,7 +391,7 @@ img {
     position: absolute;
     top: 50px;
   }
-
+  
   .team-card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
